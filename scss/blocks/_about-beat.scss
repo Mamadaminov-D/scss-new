@@ -1,0 +1,27 @@
+.beat__about {
+  margin-right: 80px;
+
+  .far {
+    font-size: 30px;
+  }
+
+  .fal {
+    font-size: 30px;
+  }
+
+  .beat__title {
+    margin-left: 30px;
+  }
+
+  .beat__link {
+    display: block;
+    color: #000;
+  }
+}
+
+@media screen and (max-width:950px) {
+ .img-div {
+   display: none !important;
+   overflow-x: hidden;
+ }
+}

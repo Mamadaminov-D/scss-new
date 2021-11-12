@@ -9,3 +9,9 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media screen and (max-width:950px) {
+  #hero-about {
+    width: 80%;
+  }
+}
