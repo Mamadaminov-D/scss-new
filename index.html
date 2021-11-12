@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,1071 @@
   <title>Lesson</title>
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@100&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
+
+  <header>
+    <div class="container">
+      <div class="header-t d-flex between-xs center-xs mt-3">
+        <p class="header-t__txt">FREE express international delivery + EASY returns</p>
+
+        <nav class="header-t__nav nav"></nav>
+        <ul class="nav__list d-flex ">
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">Faq</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="menu">
+          <i class='bx bx-menu'></i>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section id="menu-section">
+    <div class="fluid-container">
+      <div class="container">
+        <div class="hero-header d-flex justify-content-between">
+          <div class="bur-menu">
+            <a class="off-menu " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <i class='bx bx-menu'></i>
+            </a>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset xix" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                </button>
+              </div>
+
+              <div class="canv-body">
+
+                <ul class="canv__list">
+                  <li class="canv__item"><a href="#" class="canv__link">Home</a> <i class="fas nxt fa-forward"></i></li>
+                </ul>
+                <ul class="canv__list">
+                  <li class="canv__item"><a href="#" class="canv__link">Shop </a> <i class="fas nxt fa-forward"></i>
+                  </li>
+                </ul>
+                <ul class="canv__list">
+                  <li class="canv__item"><a href="#" class="canv__link">Pages
+                    </a><i class="fas nxt fa-forward"></i></li>
+                </ul>
+                <ul class="canv__list">
+                  <li class="canv__item"><a href="#" class="canv__link">Blog</a></li>
+                </ul>
+                <ul class="canv__list">
+                  <li class="canv__item"><a href="#" class="canv__link">Contact</a></li>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+          <a href="#" class="logo"><img src="img/logo.jpg" alt="logo"></a>
+
+          <form class="form-h">
+            <label>
+
+              <input type="email" placeholder="Enter Keeyword">
+              <button class="inp-btn">
+                <i class='bx bx-search'></i>
+              </button>
+            </label>
+          </form>
+
+
+          <div class="icons-gr">
+            <a class="user-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <i class='bx h-icon nun bx-user'></i> </a>
+
+
+
+            <div class="offcanvas rightcan offcanvas-end" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <a id="offcanvasRightLabel"><img src="img/logo.jpg" alt="logo"></a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas__body canvs">
+                <div class="height">
+
+                  <form class="canv__form"></form>
+                  <label class="label-mail">
+                    <input class="canvs__inp" type="email" placeholder="Enter your mail" required>
+                  </label>
+
+                  <label class="label-mail secn">
+                    <input class="canvs__inp" type="password" placeholder="Password" required>
+                    <button class="canv-btn"><i class='bx bxs-key'></i></button>
+                  </label>
+
+                  <div class="span-div row">
+                    <label class="col-6">
+                      <input type="checkbox">
+                      Remember Me
+                    </label>
+
+                    <button class="col-6 acard-btn" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <a class="acardion-link" href="#">Forgot Pasword ?</a>
+                    </button>
+
+                    <a class="logn__btn" type="submit" href="#">Login</a>
+
+                    <div id="flush-collapseOne" class="accordion-collapse collapse">
+                      <code class="code-acard">
+                        <p class="acard__title"><b>Reset-pasword</b></p>
+                        <label class="acard__inp">
+                          <input type="password" placeholder="Email Adress" required>
+                        </label>
+                        <a class="green-btn" type="submit" href="#">Reset-pasword</a>
+                      </code>
+                    </div>
+                  </div>
+
+                  <div class="canv__icon-gr">
+                    <h3 class="canv-social__title">Connect with Social Networks</h3>
+                    <i class='bx canv__icons bxl-facebook'></i>
+                    <i class='bx canv__icons bxl-google'></i>
+                    <i class='bx canv__icons bxl-twitter'></i>
+                  </div>
+
+
+                  <div class="canv__registr registr">
+                    <h3 class="registr__title">New Account Register</h3>
+                    <form class="registr__form">
+                      <label>
+                        <input class="registr__inp" type="text" placeholder="First Name">
+                      </label>
+                      <label>
+                        <input class="registr__inp" type="text" placeholder="Fast Name">
+                      </label>
+                      <label>
+                        <input class="registr__inp" type="email" placeholder="Email Adress" required>
+                      </label>
+                      <label>
+                        <input class="registr__inp" type="password" placeholder="Password">
+                      </label>
+                      <label>
+                        <input type="checkbox">
+                        I agree with this
+                      </label>
+
+                      <button class="registr__btn" type="submit">Create an Account</button>
+
+                    </form>
+                  </div>
+                </div>
+
+                <div class="canv__body-bottom d-flex ">
+
+                  <div class="canv__flags col-3">
+                    <img src="img/usa-icon.jpg" alt="usa-icon">
+                    <img src="img/french-icon.jpg" alt="usa-icon">
+                    <img src="img/french-icon.jpg" alt="usa-icon">
+                    <br>
+                    <img src="img/germny-icon.jpg" alt="usa-icon">
+                    <img src="img/ispan-icon.jpg" alt="usa-icon">
+                    <img src="img/last-flag.jpg" alt="usa-icon">
+
+                    <p class="curensty"><b>Currensy:</b></p>
+
+                    <span>EUR</span>
+                    <span class="dolrs"> USD</span>
+
+                  </div>
+
+                  <div class="canv__close ">
+                    <p><i class='bx bx-log-in'></i> sign in</p>
+                    <p><i class='bx bxs-user'></i> My account</p>
+                    <p><i class='bx bx-heart'></i></i>Wishlist</p>
+                    <p><i class='bx bxs-layer'></i>Compare</p>
+                    <p><i class='bx bx-check-square'></i>Check out</p>
+
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+            <i class='bx h-icon nun bx-heart'></i>
+
+            <i class='bx h-icon bx-cart'></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section id="department">
+    <div class="fluid-container">
+      <div class="container">
+        <div class="department__div d-flex">
+          <div class="department__open">
+           
+            <div class="btn-group">
+              <a class="btn drpdwn-btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class='bx department__menu bx-menu'></i> Shop by Department
+
+
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown__item"><i class="far fa-salad"></i><a href="#" class="dropdaown__link">Fruits &
+                    Vegitables</a></li>
+                <li class="dropdown__item"><i class="far fa-meat"></i><a href="#"
+                    class="dropdaown__link">Supplyments</a> <i class="fad strekla fa-chevron-right"></i></li>
+                <li class="dropdown__item"><i class="far fa-egg-fried"></i><a href="#" class="dropdaown__link">Dairy
+                    Bread & Eggs</a><i class="fad strekla fa-chevron-right"></i></li>
+                <li class="dropdown__item"><i class="fal fa-pizza-slice"></i><a href="#" class="dropdaown__link">Package
+                    Foods</a></li>
+                <li class="dropdown__item"><i class="far fa-apple-alt"></i><a href="#" class="dropdaown__link">Beauty &
+                    Care</a><i class="fad strekla fa-chevron-right"></i></li>
+                <li class="dropdown__item"><i class="fal fa-volleyball-ball"></i><a href="#"
+                    class="dropdaown__link">Baby & Infants</a></li>
+                <li class="dropdown__item"><i class="far fa-ice-cream"></i><a href="#" class="dropdaown__link">Baby &
+                    Infants</a></li>
+                <li class="dropdown__item"><i class="fal fa-leaf"></i><a href="#" class="dropdaown__link">Health &
+                    Wellness</a></li>
+                <li class="dropdown__item"><i class="fal fa-badge-percent"></i><a href="#"
+                    class="dropdaown__link">Health & Wellness</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="depart__list d-lg-flex d-none">
+            <li class="depart__item depart-first home__r">
+              <a href="#" class="depart__link home__hvr"> Home
+                <div class="home__open">
+                  <ul class="home__list">
+
+                    <li class="home__item">
+                      <a href="#">home</a>
+                    </li>
+                    <li class="home__item">
+                      <a href="#">home</a>
+                    </li>
+                    <li class="home__item">
+                      <a href="#">home</a>
+                    </li>
+                    <li class="home__item">
+                      <a href="#">home</a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+              <i class="fad depart__down fa-chevron-down"></i>
+            </li>
+
+            <li class="depart__item shop__open ">
+              <a href="#" class="depart__link shop__hvr_big"> Shop
+                <div class="shop__hvr">
+                  <a href="#" class="shop__hvr__link"><img src="img/hvr_btn.jpg" alt=""></a>
+                  <a href="#" class="shop__hvr__link"><img src="img/hvr_btn.jpg" alt=""></a>
+                  <a href="#" class="shop__hvr__link"><img src="img/hvr_btn.jpg" alt=""></a>
+                  <a href="#" class="shop__hvr__link"><img src="img/hvr_btn.jpg" alt=""></a>
+                  <a href="#" class="shop__hvr__link"><img src="img/hvr_btn.jpg" alt=""></a>
+                </div>
+              </a>
+              <i class="fad depart__down fa-chevron-down"></i>
+            </li>
+
+            <li class="depart__item depart__item-hvr">
+              <a href="#" class="depart__link"> Pages
+
+                <div class="hvr__open-div d-flex">
+                  <ul class="hvr__list ohrgi_hvr">
+                    <li class="hvr__item">
+                      <span class="hvrr__item-title"><b>catigories</b></span>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                  </ul>
+                  <ul class="hvr__list ohrgi_hvr">
+                    <li class="hvr__item">
+                      <span class="hvrr__item-title"><b>catigories</b></span>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                  </ul>
+                  <ul class="hvr__list ohrgi_hvr">
+                    <li class="hvr__item">
+                      <span class="hvrr__item-title"><b>catigories</b></span>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                  </ul>
+                  <ul class="hvr__list ohrgi_hvr">
+                    <li class="hvr__item">
+                      <span class="hvrr__item-title"><b>catigories</b></span>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                    <li class="hvr__item">
+                      <div class="hvr__link">home1</div>
+                    </li>
+                  </ul>
+
+
+                </div>
+
+              </a>
+              <i class="fad depart__down fa-chevron-down"></i>
+            </li>
+
+            <li class="depart__item">
+              <a href="#" class="depart__link depart__link2">Blog</a>
+            </li>
+            <li class="depart__item">
+              <a href="#" class="depart__link depart__link2">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section> 
+
+   <main>
+
+    <section id="hero-section">
+      <div class="fluid-container">
+        <div class="container">
+          <div class="hero__big  row">
+            <div class="hero__special col-lg-8 col-sm-12">
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/egg-hero.jpg" class="d-block w-100" alt="img">
+                    <div class="hero__descrip">
+                      <p class="h-smal__txt animate__animated animate__bounceInDown"><b>Fresh and Tasty</b></p>
+                      <h3 class="h-smal__title animate__animated animate__fadeInLeft">Farm Maket Organic Shop</h3>
+                      <a href="#" class="h-smal__link">Shop Now <i class="nxt_icon fa fa-angle-double-right"
+                          aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/only-sabzavot__backgr.jpg" class="d-block w-100" alt="img">
+                    <div class="hero__descrip ">
+                      <p class="h-smal__txt animate__animated animate__bounceInDown"><b>Fresh and Tasty</b></p>
+                      <h3 class="h-smal__title animate__animated animate__fadeInLeft">Farm Maket Organic Shop</h3>
+                      <a href="#" class="h-smal__link">Shop Now <i class="nxt_icon fa fa-angle-double-right"
+                          aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ffffff">
+                  <button class=" slide-nxt " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <i class='bx fa-rotate-180 nxt-img bx-left-arrow-alt'></i>
+                  </button>
+                  <button class="slide-nxt slide-nxt2" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <i class='bx fa-rotate-180 bx-right-arrow-alt'></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-small col-lg-4 col-sm-12">
+              <div class="hero-small-1">
+                <div class="hero-small-1__open">
+                  <h3 class="h-smal-1__title animate__animated animate__fadeInLeft">Discover <br> Real Organic Flowers
+                  </h3>
+                  <a href="#" class="h-smal-1__link">Shop Now <i class="nxt_icon fa fa-angle-double-right"
+                      aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <div class="hero-small-2">
+                <div class="hero-small-2__open">
+                  <p class="h-smal-2__txt">Summer Sale</p>
+                  <h3 class="h-smal-2__title animate__animated animate__fadeInLeft">50% Off</h3>
+                  <p class="h-smal-2__txt2">Vitamins, Supplements and Herbs</p>
+                  <a href="#" class="h-smal-2__link">Shop Now <i class="nxt_icon2 fa fa-angle-double-right"
+                      aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="natural-section">
+      <div class="fluid-container">
+        <div class="container">
+          <ul class="natural__list row ">
+            <li class="natural__item col-sm-6 col-lg-3 col-xs-12 justify-content-center">
+              <div class="natrual__descrip">
+                <h3 class="natural__descrip-title mb-2">Curated Products</h3>
+                <p class="natural__descrip-title">from Handpicked Sellers</p>
+              </div>
+            </li>
+            <li class="natural__item col-sm-6 col-lg-3 col-xs-12 justify-content-center">
+              <div class="natrual__descrip">
+                <h3 class="natural__descrip-title mb-2">Curated Products</h3>
+                <p class="natural__descrip-title">from Handpicked Sellers</p>
+              </div>
+            </li>
+            <li class="natural__item col-sm-6 col-lg-3 col-xs-12 justify-content-center">
+              <div class="natrual__descrip">
+                <h3 class="natural__descrip-title mb-2">Curated Products</h3>
+                <p class="natural__descrip-title">from Handpicked Sellers</p>
+              </div>
+            </li>
+            <li class="natural__item col-sm-6 col-lg-3 col-xs-12 justify-content-center">
+              <div class="natrual__descrip">
+                <h3 class="natural__descrip-title mb-2">Curated Products</h3>
+                <p class="natural__descrip-title">from Handpicked Sellers</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="product-section">
+      <div class="fluid-container">
+        <div class="container">
+          <div id="carouselExampleControls" class="carousel slide carusel-product hhg" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <ul class="product__list row justify-content-between">
+                  <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                    <div class="product__item-div">
+                      <div class="product__icons-gr">
+                        <i class='bx bx-show'></i>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                      </div>
+                      <img src="img/apilsin.jpg" alt="img">
+                      <span class="product__item-span">Orange</span>
+                      <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                      <span class="product__item-span2"><b>$</b>22.00</span>
+                      <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+
+                    </div>
+                  </li>
+                  <li class="product__item yoq-bol enter-lg col-lg-3 col-md-6 col-sm-12">
+                    <div class="product__item-div">
+
+                      <div class="product__icons-gr">
+                        <i class='bx bx-show'></i>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                      </div>
+
+                      <img src="img/banan.jpg" alt="img">
+                      <span class="product__item-span">Banana</span>
+                      <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                      <span class="product__item-span2"><b>$</b>22.00</span>
+                      <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+
+                    </div>
+                  </li>
+                  <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                    <div class="product__item-div">
+                      <div class="product__icons-gr">
+                        <i class='bx bx-show'></i>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                      </div>
+                      <img src="img/taruuz.jpg" alt="img">
+                      <span class="product__item-span">Vatermelov</span>
+                      <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                      <span class="product__item-span2"><b>$</b>22.00</span>
+                      <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+
+                    </div>
+                  </li>
+                  <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                    <div class="product__item-div">
+                      <div class="product__icons-gr">
+                        <i class='bx bx-show'></i>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                      </div>
+                      <img class="kakos" src="img/polovinki-kokosa.jpg" alt="img">
+                      <span class="product__item-span">Coconut</span>
+                      <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                      <span class="product__item-span2"><b>$</b>22.00</span>
+                      <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="carousel-item non-act">
+
+                <ul class="product__list row justify-content-between">
+                  <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                    <div class="product__item-div">
+                      <div class="product__icons-gr">
+                        <i class='bx bx-show'></i>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                      </div>
+                      <img class="qulpne" src="img/qulpne.jpg" alt="img">
+                      <span class="product__item-span">Strowbary</span>
+                      <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                      <span class="product__item-span2"><b>$</b>22.00</span>
+                      <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+
+                    </div>
+                  </li>
+                  <li class="product__item yoq-bol center-lg col-lg-3 col-md-6 col-sm-12">
+                    <div class="product__item-div">
+
+                      <div class="product__icons-gr">
+                        <i class='bx bx-show'></i>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                      </div>
+
+                      <img class="ananas" src="img/ananas.jpg" alt="img">
+                      <span class="product__item-span">Pineapple</span>
+                      <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                      <span class="product__item-span2"><b>$</b>22.00</span>
+                      <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+
+                    </div>
+                  </li>
+                  <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                    <div class="product__item-div">
+                      <div class="product__icons-gr">
+                        <i class='bx bx-show'></i>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                      </div>
+                      <img class="kivi" src="img/kivi.jpg" alt="img">
+                      <span class="product__item-span">Kiwi</span>
+                      <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                      <span class="product__item-span2"><b>$</b>22.00</span>
+                      <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+
+                    </div>
+                  </li>
+                  <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                    <div class="product__item-div">
+                      <div class="product__icons-gr">
+                        <i class='bx bx-show'></i>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                      </div>
+                      <img src="img/red-apple.jpg" alt="img">
+                      <span class="product__item-span">Apple</span>
+                      <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                      <span class="product__item-span2"><b>$</b>22.00</span>
+                      <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <button class="product__btn pr-btn1" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <i class='bx bx-right-arrow-alt'></i>
+            </button>
+            <button class="product__btn pr-btn2" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <i class='bx bx-right-arrow-alt bx-rotate-180'></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="reclama-section">
+      <div class="fluid-container">
+        <div class="container">
+          <div class="parfume__big row col-sm-12">
+            <div class="parfume__div1 col-lg-3 ps-r">
+              <img class="prafume__img" src="img/avakada.jpg" alt="img">
+              <div class="parfume__descrip">
+                <div class="parfume__txt">Fruits & <br> Vagitables</div>
+              </div>
+            </div>
+            <div class="col-lg-6 row">
+              <div class="parfume__div2 col-lg-12 ps-r">
+                <img class="prafume__img" src="img/chees-egg.jpg" alt="img">
+                <div class="parfume__descrip2">
+                  <div class="parfume__txt2">Fruits & <br> Vagitables</div>
+                </div>
+
+              </div>
+              <div class="parfume__div3 col-lg-6 ps-r">
+                <div class="parfume__descrip3">
+                  <div class="parfume__txt3">Fruits & <br> Vagitables</div>
+                </div>
+                <img class="prafume__img" src="img/pocet-cofee.jpg" alt="img">
+
+              </div>
+              <div class=" parfume__div4 col-lg-6 ps-r">
+                <div class="parfume__descrip4">
+                  <div class="parfume__txt4">Fruits & <br> Vagitables</div>
+                </div>
+                <img class="prafume__img" src="img/juice.jpg" alt="img">
+              </div>
+            </div>
+            <div class="parfume__div5 col-lg-3 ps-r">
+              <div class="parfume__descrip5">
+                <div class="parfume__txt5">Fruits & <br> Vagitables</div>
+              </div>
+              <img class="prafume__img" src="img/parfume.jpg" alt="img">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vagitable-section">
+      <div class="fluid-container">
+        <div class="container">
+          <section id="product-section">
+            <div class="fluid-container">
+              <div class="container">
+                <div id="carouselExampleControlss" class="carousel slide carusel-product hhg" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <ul class="product__list row justify-content-between">
+                        <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                          <div class="product__item-div">
+                            <div class="product__icons-gr">
+                              <i class='bx bx-show'></i>
+                              <i class='bx bx-heart'></i>
+                              <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                            </div>
+                            <img class="poteto" src="img/potatoes.jpeg" alt="img">
+                            <span class="product__item-span">Potato</span>
+                            <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                            <span class="product__item-span2"><b>$</b>22.00</span>
+                            <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+      
+                          </div>
+                        </li>
+                        <li class="product__item yoq-bol center-lg col-lg-3 col-md-6 col-sm-12">
+                          <div class="product__item-div">
+      
+                            <div class="product__icons-gr">
+                              <i class='bx bx-show'></i>
+                              <i class='bx bx-heart'></i>
+                              <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                            </div>
+      
+                            <img src="img/carrot.jpg" alt="img">
+                            <span class="product__item-span">Carrot</span>
+                            <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                            <span class="product__item-span2"><b>$</b>22.00</span>
+                            <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+      
+                          </div>
+                        </li>
+                        <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                          <div class="product__item-div">
+                            <div class="product__icons-gr">
+                              <i class='bx bx-show'></i>
+                              <i class='bx bx-heart'></i>
+                              <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                            </div>
+                            <img class="chisnok" src="img/chisnok.jpg" alt="img">
+                            <span class="product__item-span">Garlic</span>
+                            <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                            <span class="product__item-span2"><b>$</b>22.00</span>
+                            <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+      
+                          </div>
+                        </li>
+                        <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                          <div class="product__item-div">
+                            <div class="product__icons-gr">
+                              <i class='bx bx-show'></i>
+                              <i class='bx bx-heart'></i>
+                              <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                            </div>
+                            <img class="balgar" src="img/balgarski.jpg" alt="img">
+                            <span class="product__item-span">Bulgarian</span>
+                            <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                            <span class="product__item-span2"><b>$</b>22.00</span>
+                            <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+      
+                          </div>
+                        </li>
+      
+                      </ul>
+                    </div>
+                    <div class="carousel-item non-act">
+      
+                      <ul class="product__list row justify-content-between">
+                        <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                          <div class="product__item-div">
+                            <div class="product__icons-gr">
+                              <i class='bx bx-show'></i>
+                              <i class='bx bx-heart'></i>
+                              <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                            </div>
+                            <img class="qulpne" src="img/piyoz.jpeg" alt="img">
+                            <span class="product__item-span">Onion</span>
+                            <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                            <span class="product__item-span2"><b>$</b>22.00</span>
+                            <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+      
+                          </div>
+                        </li>
+                        <li class="product__item yoq-bol center-lg col-lg-3 col-md-6 col-sm-12">
+                          <div class="product__item-div">
+      
+                            <div class="product__icons-gr">
+                              <i class='bx bx-show'></i>
+                              <i class='bx bx-heart'></i>
+                              <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                            </div>
+      
+                            <img class="cucum" src="img/cucumber.jpg" alt="img">
+                            <span class="product__item-span">Cucumber</span>
+                            <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                            <span class="product__item-span2"><b>$</b>22.00</span>
+                            <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+      
+                          </div>
+                        </li>
+                        <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                          <div class="product__item-div">
+                            <div class="product__icons-gr">
+                              <i class='bx bx-show'></i>
+                              <i class='bx bx-heart'></i>
+                              <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                            </div>
+                            <img class="qalamp" src="img/qalamp.jpg" alt="img">
+                            <span class="product__item-span">Peper</span>
+                            <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                            <span class="product__item-span2"><b>$</b>22.00</span>
+                            <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+      
+                          </div>
+                        </li>
+                        <li class="product__item center-lg col-lg-3 col-md-6 col-sm-12">
+                          <div class="product__item-div">
+                            <div class="product__icons-gr">
+                              <i class='bx bx-show'></i>
+                              <i class='bx bx-heart'></i>
+                              <i class='bx bx-sort-alt-2 bx-rotate-90'></i>
+                            </div>
+                            <img class="baqlajon" src="img/baqlajon.jpg" alt="img">
+                            <span class="product__item-span">Eggplant</span>
+                            <p class="product__item-txt">Organic High-CurcuminTurmeric <br> Powder</p>
+                            <span class="product__item-span2"><b>$</b>22.00</span>
+                            <a href="#" class="product__item-link">ADD TO CART <i class='bx bx-chevrons-right'></i></a>
+                          </div>
+                        </li>
+      
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="product__btn pr-btn1" type="button" data-bs-target="#carouselExampleControlss"
+                    data-bs-slide="prev">
+                    <i class='bx bx-right-arrow-alt'></i>
+                  </button>
+                  <button class="product__btn pr-btn2" type="button" data-bs-target="#carouselExampleControlss"
+                    data-bs-slide="next">
+                    <i class='bx bx-right-arrow-alt bx-rotate-180'></i>
+                  </button>
+                </div>
+      
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+     <section id="book-section">
+      <div class="fluid-container">
+        <div class="container">
+          <div class="book-big row">
+            <img class="col-lg-6 col-sm-12-" src="img/opa.jpg" alt="img">
+            <div class="book__read read col-lg-6 col-sm-12">
+              <div class="for-slide">
+                <h3 class="read__title">A shop for good people by good people</h3>
+                <p class="read__txt">Buy natural, sustainable and chemicalfree products from local sellers across the country. </p>
+                <p class="read__txt">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality. </p>
+              </div>
+            </div>
+          </div>
+          <div class="book-big book-big2 row">
+            <div class="book__read read col-lg-6 col-sm-12">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide ps-r" data-bs-ride="carousel">
+                <div class="carousel-indicators lacation-btn">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="for-slide">
+                      <h3 class="read__title cly ">Why customer love us</h3>
+                      <p class="read__txt cly">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.” </p>
+                      <p class="read__txt spn-c">Pragya - Bellandur Store</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="for-slide">
+                      <h3 class="read__title cly ">Why customer love us</h3>
+                      <p class="read__txt cly">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.” </p>
+                      <p class="read__txt spn-c">Pragya - Bellandur Store</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="for-slide">
+                      <h3 class="read__title cly ">Why customer love us</h3>
+                      <p class="read__txt cly">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.” </p>
+                      <p class="read__txt spn-c">Pragya - Bellandur Store</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev book-btn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next book-btn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                
+              </div>
+            </div>
+            <img class="col-lg-6 col-sm-12-" src="img/doda.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+  
+    </section> 
+
+    <section id="sponsor-section ">
+      <div class="fluid-container">
+        <div class="container">
+          <div class="sponsor">
+            <ul class="sponsor__list row">
+              <li class="sponsor__item col-lg-2 col-md-6 center-md pb-5 col-12 center-xs col-sm-12">
+                <img src="img/spons-1.jpg" alt="img">
+              </li>
+              <li class="sponsor__item col-lg-2 col-md-6 center-md pb-5 col-12 center-xs col-sm-12">
+                <img src="img/spons-2.jpg" alt="img">
+              </li>
+              <li class="sponsor__item col-lg-2 col-md-6 center-md pb-5 col-12 center-xs col-sm-12">
+                <img src="img/spons-3.jpg" alt="img">
+              </li>
+              <li class="sponsor__item col-lg-2 col-md-6 center-md pb-5 col-12 center-xs col-sm-12">
+                <img src="img/spons-4.jpg" alt="img">
+              </li>
+              <li class="sponsor__item col-lg-2 col-md-6 center-md pb-5 col-12 center-xs col-sm-12">
+                <img src="img/spons-5.jpg" alt="img">
+              </li>
+              <li class="sponsor__item col-lg-2 col-md-6 center-md pb-5 col-12 center-xs col-sm-12">
+                <img src="img/spons-6.jpg" alt="img">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="call-section">
+      <div class="fluid container">
+        <div class="container">
+          <div class="row">
+            <div class="call__phone  col-lg-6  mb-5  col-12">
+              <div class="call__wrapper row">
+                <div class="col-4 call__inner">
+                  <i class="fal call__beats fa-headphones-alt"></i>
+                </div>
+                <div class="call-descrip col-8">
+                  <span class="call__span">Phone Suport</span>
+                  <span class="call__span">Call Us 24/7</span>
+                  <h3 class="call__title">(1800)-88-66-991</h3>
+                  <a class="call__link">contact@example.com</a>
+                </div>
+               </div>
+            </div>
+            <div class="call__phone  col-lg-6 mb-5 col-12">
+              <div class="call__wrapper row">
+                <div class="col-4 call__inner">
+                  <i class="fal call__beats fa-envelope-open-text"></i>
+                </div>
+                <div class="call-descrip col-8">
+                  <span class="call__span">Phone Suport</span>
+                  <span class="call__span">Call Us 24/7</span>
+                  <h3 class="call__title">(1800)-88-66-991</h3>
+                  <a class="call__link">contact@example.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main> 
+
+  <footer>  
+    <div class="fluid-container">
+      <div class="container">
+        <div class="footer__inner row center">
+        <ul class="footer__list col-lg-3 col-sm-12">
+          <li class="footer__item"><h4 class="footer__title">STORE LOCATION</h4></li>
+          <li class="footer__item"><a class="footer__link" href="#">9066 Green Lake Drive Chevy
+            <br>
+            Chase, MD 20815</a></li>
+          <li class="footer__itemv"><a class="footer__link mt-5" href="#">Monday - Saturday:</a></li>
+          <li class="footer__item"><time>8:00</time>am<time>4:00</time>pm</li>
+          <li class="footer__item"><a class="footer__link mt-5" href="#">Sunday:</a></li>
+          <li class="footer__item"><time>9:00</time>am<time>5:00</time>pm</li>
+      </ul>
+
+      <ul class="footer__list col-lg-2 col-sm-12">
+        <li class="footer__item">
+          <h4 class="footer__title">Information</h4>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">About</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Contact</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Check Out</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Service</a>
+        </li>
+      </ul>
+      <ul class="footer__list col-lg-2 col-sm-12">
+        <li class="footer__item">
+          <h4 class="footer__title">My Account</h4>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">My Account</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Contact</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Shopping Card</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Shop</a>
+        </li>
+      </ul>
+      <ul class="footer__list col-lg-2 col-sm-12">
+        <li class="footer__item">
+          <h4 class="footer__title">Catigories</h4>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Fruit & Vagitables</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Diary Products</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Package Foods</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Beverega</a>
+        </li>
+      </ul>
+      <ul class="footer__list col-lg-3 col-sm-12">
+        <li class="footer__item">
+          <h4 class="footer__title">Accept Payment </h4>
+        </li>
+        <li class="footer__item">
+          <img src="img/cardss.png" alt="img">
+        </li>
+     
+      </ul>
+    </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

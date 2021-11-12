@@ -1,0 +1,75 @@
+.natural__list {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+
+.natural__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:#0A472E;
+    transition: all 0.5s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-right: 15px;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url("../../img/fruit-img-1.png");
+
+  }
+  &:nth-child(2)::before {
+    background-image: url("../../img/taruz.png");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../../img/home-fruit.png");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../../img/fruit-car.png");
+  }
+
+}
+
+.natural__descrip-title {
+  font-size: 16px;
+  margin-bottom: 15px !important;
+}
+
+.natural__descrip-title {
+  font-size: 14px;
+  margin-bottom: 0 !important;
+}
+
+
+@media screen and (max-width:980px) {
+  .natural__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .natural__list {
+    padding: 0;
+  }
+}

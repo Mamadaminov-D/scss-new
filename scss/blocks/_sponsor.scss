@@ -1,0 +1,12 @@
+#sponsor-section  {
+  border-top: 1px solid black !important;
+}
+
+.sponsor__item img{
+  opacity: 0.6;
+  transition: all 0.4s ease;
+  
+  &:hover {
+    opacity: 1;
+  }
+}

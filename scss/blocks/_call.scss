@@ -1,0 +1,60 @@
+#call-section {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.call__phone {
+  border: 1px solid #e5e5e5;
+  padding: 30px 15px;
+}
+
+
+.call__inner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.call__beats {
+  padding-top: 25px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: #C0C34E;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    top: 2px;
+    right: -35px;
+    background-color: #e5e5e5;
+  }
+
+}
+
+.call__span {
+  display: flex;
+  font-size: 14px;
+  color: #C8B2B5;
+  margin-bottom: 6px;
+}
+
+.call__span:nth-child(2) {
+  font-weight: 600;
+  color: #000;
+}
+
+.call__title {
+  color: #C0C34E;
+}
+
+.call__link {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
